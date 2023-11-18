@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { getUserScore, decideWinner } from '../helpers';
 
-test.describe.parallel('Deck of cards API game', () => {
+test.describe('Deck of cards API game', () => {
 
-  test.only('Start game', async ({ request }) => {
+  test('Start game', async ({ request }) => {
     const baseUrl = 'https://deckofcardsapi.com/api/deck'
     let userCardsArray: (number)[] = [];
     // Function that gets card value and pushes that value into userCardsArray
